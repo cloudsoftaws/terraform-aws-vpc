@@ -166,7 +166,7 @@ resource "aws_route" "public_internet_gateway_ipv6" {
 ################################################################################
 # Public Network ACLs
 ################################################################################
-
+# added new commet
 resource "aws_network_acl" "public" {
   count = local.create_public_subnets && var.public_dedicated_network_acl ? 1 : 0
 
